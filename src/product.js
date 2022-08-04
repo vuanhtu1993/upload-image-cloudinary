@@ -29,7 +29,7 @@ router.post('/upload', async function(req, res) {
 
 router.get('/download', async function(req, res) {
     try {
-        const fileDir =  __dirname + "/public/cube-skeleton.png"
+        const fileDir =  __dirname + "/public/app-release.apk"
         fs.access(fileDir, fs.constants.F_OK, err => {
             console.log(`${fileDir} is not existed, ${err}`)
         })
