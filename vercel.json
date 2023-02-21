@@ -6,10 +6,14 @@
             "use": "@vercel/node"
         }
     ],
+    "build": {
+        "script": "npm run start"
+    },
     "routes": [
         {
-            "src": "/(.*)",
-            "use": "/"
+            "src": "/.*",
+            "use": "/",
+            "dest": "index.js"
         }
     ]
 }
