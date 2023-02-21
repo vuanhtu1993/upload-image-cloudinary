@@ -6,6 +6,7 @@ const app = express()
 app.use(cors());
 app.use(express.json({limit: '0.2mb'}))
 app.use(express.urlencoded({limit: '0.2mb', extended: true}))
+// Middleware
 app.use('/api', product)
 
 const port = process.env.PORT || 3002
